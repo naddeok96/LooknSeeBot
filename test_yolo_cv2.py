@@ -32,8 +32,10 @@ while True:
     # Display the output
     cv2.imshow("Look n' See", frame)
 
-    k = cv2.waitKey(1)
+    k = cv2.waitKey(0)
     if k%256 == 27:
         print("Escape hit, closing...")
     
-
+# Close out
+cam.release()
+cv2.destroyAllWindows()
