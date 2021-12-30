@@ -12,7 +12,7 @@ cv2.namedWindow("Look n' See")
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Watch
-for _ in range(1):
+while True:
     ret, frame = cam.read()
 
     if not ret: 
